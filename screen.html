@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="reset.css">
+    <style>
+        .grid {
+            height: 100%;
+            display: grid;
+            grid-template-columns: auto;
+            grid-template-rows: 70px auto;
+        }
+        .header {
+            background-color: #040B0E;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 30px;
+            font-weight: bolder;
+            color: #0EC2D9;
+        }
+        .main {
+            background-color: #394958;
+            display: grid;
+            grid-template-columns: 380px auto 380px;
+            grid-column-gap: 20px;
+        }
+        .left, .right {
+            display: grid;
+            grid-template-rows: 1fr 1fr 1fr;
+            grid-row-gap: 20px;
+        }
+        .box {
+            background-color: red;
+        }
+        .center {
+            display: grid;
+            grid-row-gap: 20px;
+            grid-template-rows: auto 200px;
+        }
+    </style>
+</head>
+<body>
+    <div class="grid">
+        <div class="header">
+            排行榜
+        </div>
+        <div class="main">
+            <div class="left">
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+            </div>
+            <div class="center">
+                <div style="background-color: blue"></div>
+                <div style="background-color: red"></div>
+            </div>
+            <div class="right">
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
